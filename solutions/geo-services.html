@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>什么是 GEO 服务? 生成式引擎优化完整指南 | Agency Semrush</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="Agency Semrush">
+    <meta name="description" content="深度解析 GEO (生成式引擎优化) 的核心原理、执行框架与实践策略。了解如何让 ChatGPT、Perplexity 和 Google AI Overviews 引用您的品牌。">
+    <link rel="canonical" href="https://agencysemrush.com/solutions/geo-services.html" />
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{colors:{brand:{orange:'#ff642d',green:'#00ce7d',purple:'#8a3ffc',dark:'#1c1c1c',gray:'#5e617d',light:'#f5f6f8'}},fontFamily:{sans:['Montserrat','"PingFang SC"','"Microsoft YaHei"','sans-serif']}}}};</script>
+</head>
+<body class="bg-brand-light font-sans text-brand-dark antialiased">
+
+    <!-- ═══ NAVBAR ═══ -->
+                                    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-brand-dark/90 backdrop-blur-md">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10 flex items-center justify-between h-28">
+            <a href="/index.html" class="flex items-center">
+                <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-90 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+            </a>
+            <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/60">
+                <!-- SEO Fundamentals Dropdown -->
+                <div class="relative group h-full py-4">
+                    <button class="hover:text-white transition flex items-center gap-1">
+                        SEO 基础
+                        <svg class="w-4 h-4 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-12 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 w-48 text-center origin-top-left transition-all">
+                        <a href="/definitions/what-is-seo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 SEO</a>
+                        <a href="/definitions/what-is-aeo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 AEO</a>
+                        <a href="/definitions/what-is-geo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 GEO</a>
+                    </div>
+                </div>
+
+                <a href="/ai-search/ai-search-guide.html" class="hover:text-white transition">AI Search</a>
+
+                <!-- Industry Dropdown -->
+                <div class="relative group h-full py-4">
+                    <button class="hover:text-white transition flex items-center gap-1">
+                        行业SEO
+                        <svg class="w-4 h-4 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-12 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 w-48 text-center origin-top-left transition-all">
+                        <a href="/industries/ecommerce.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">电商 E-Commerce</a>
+                        <a href="/industries/real-estate.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">房产 Property</a>
+                        <a href="/industries/finance.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">金融 Finance</a>
+                        <a href="/industries/beauty.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">医美 Beauty</a>
+                        <a href="/industries/fnb.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">餐饮 F&amp;B</a>
+                        <a href="/industries/b2b.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">B2B 技术</a>
+                    </div>
+                </div>
+
+                <a href="/articles.html" class="hover:text-white transition">知识库</a>
+                <a href="/agencies.html" class="hover:text-white transition">机构排名</a>
+            </div>
+            <a href="/agencies.html" class="hidden lg:block text-sm font-bold bg-brand-green text-white px-5 py-2 rounded-lg hover:opacity-90 transition">探索排行榜</a>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <header class="bg-brand-dark pt-28 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5" style="background-image:linear-gradient(#00ce7d 1px,transparent 1px),linear-gradient(90deg,#00ce7d 1px,transparent 1px);background-size:48px 48px;"></div>
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10 relative">
+            <div class="max-w-3xl">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-brand-purple text-xs font-black uppercase tracking-widest">核心搜索原理</span>
+                    <span class="text-white/20">•</span>
+                    <span class="text-white/30 text-xs">阅读时间: 8 分钟</span>
+                </div>
+                <h1 class="text-4xl lg:text-6xl font-black text-white leading-tight mb-6">
+                    什么是<br/>
+                    <span class="text-brand-purple">GEO 服务</span>?
+                </h1>
+                <p class="text-white/50 text-lg leading-relaxed max-w-2xl mb-8">生成式引擎优化 (GEO — Generative Engine Optimization) 是通过特定的数据构造与权威性覆盖，使 AI 大语言模型在回答用户问题时主动引用或推荐您的品牌/内容的新兴策略。</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="/definitions/what-is-geo.html" class="text-sm font-bold bg-brand-purple/20 text-brand-purple border border-brand-purple/40 px-4 py-2 rounded-lg hover:bg-brand-purple hover:text-white transition"># ChatGPT 引用优化</a>
+                    <a href="/ai-search/ai-search-guide.html" class="text-sm font-bold bg-white/5 text-white/50 border border-white/10 px-4 py-2 rounded-lg hover:border-white/30 hover:text-white transition"># AI Search</a>
+                    <a href="/solutions/aeo-services.html" class="text-sm font-bold bg-white/5 text-white/50 border border-white/10 px-4 py-2 rounded-lg hover:border-white/30 hover:text-white transition"># AEO 对比</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══ MAIN CONTENT ═══ -->
+    <main class="max-w-screen-xl mx-auto px-6 lg:px-10 py-16">
+        <div class="max-w-3xl mx-auto">
+
+            <!-- 1. 核心定义 -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-black text-brand-dark mb-6">1. 核心定义</h2>
+                <p class="text-brand-gray leading-relaxed mb-6"><strong class="text-brand-dark">生成式引擎优化 (GEO)</strong> 标志着搜索引擎从"信息导航"向"答案生成"的直接演变。当用户在 ChatGPT 或 Perplexity 中提问时，AI 会从训练数据或实时网络抓取中提取信息并引用来源。GEO 的目标是让您的内容成为被引用的权威来源。</p>
+                <div class="bg-brand-purple/10 border-l-4 border-brand-purple p-6 rounded-r-xl">
+                    <p class="font-bold text-brand-dark">🤖 关键洞察：Google AI Overviews 已在全球展示，ChatGPT 每月有 2 亿+用户。优化 GEO 可见性是下一个搜索红利。</p>
+                </div>
+            </section>
+
+            <!-- 2. 三大支柱 -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-black text-brand-dark mb-8">2. GEO 的三大执行维度</h2>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-brand-dark rounded-2xl p-6 text-white">
+                        <div class="text-brand-purple font-black text-2xl mb-3">01</div>
+                        <h3 class="font-black text-lg mb-3">引文建设<br/><span class="text-brand-purple">Citation Authority</span></h3>
+                        <ul class="text-white/50 text-sm space-y-2">
+                            <li>✓ 在高权重媒体发布内容</li>
+                            <li>✓ Wikipedia / Wikidata 条目</li>
+                            <li>✓ 行业报告引用</li>
+                            <li>✓ 学术机构提及</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-purple rounded-2xl p-6 text-white">
+                        <div class="text-white/60 font-black text-2xl mb-3">02</div>
+                        <h3 class="font-black text-lg mb-3">品牌信号<br/><span class="text-white/80">Entity Clarity</span></h3>
+                        <ul class="text-white/70 text-sm space-y-2">
+                            <li>✓ 一致的品牌描述语</li>
+                            <li>✓ Google Knowledge Panel</li>
+                            <li>✓ 清晰的机构简介</li>
+                            <li>✓ 跨平台 NAP 一致性</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6">
+                        <div class="text-brand-green font-black text-2xl mb-3">03</div>
+                        <h3 class="font-black text-lg mb-3 text-brand-dark">内容结构<br/><span class="text-brand-green">Structured Data</span></h3>
+                        <ul class="text-brand-gray text-sm space-y-2">
+                            <li>✓ FAQ Schema 部署</li>
+                            <li>✓ How-To 结构化内容</li>
+                            <li>✓ 机器可读的数据格式</li>
+                            <li>✓ 深度长文权威指南</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. 框架 -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-black text-brand-dark mb-8">3. GEO 执行框架 (5 步)</h2>
+                <div class="space-y-4">
+                    <div class="flex gap-4 bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+                        <span class="text-brand-purple font-black text-xl w-8 flex-shrink-0">01</span>
+                        <div>
+                            <h4 class="font-black text-brand-dark mb-1">AI 可见性审计 (Visibility Audit)</h4>
+                            <p class="text-brand-gray text-sm">测试您的品牌在 ChatGPT / Perplexity / Gemini 的对话中是否被提及，定位可见性缺口。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+                        <span class="text-brand-purple font-black text-xl w-8 flex-shrink-0">02</span>
+                        <div>
+                            <h4 class="font-black text-brand-dark mb-1">实体定义 (Entity Definition)</h4>
+                            <p class="text-brand-gray text-sm">确保品牌在 Google Knowledge Graph、Wikipedia 及行业媒体上有清晰一致的定义与描述。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+                        <span class="text-brand-green font-black text-xl w-8 flex-shrink-0">03</span>
+                        <div>
+                            <h4 class="font-black text-brand-dark mb-1">引用内容创作 (Citation Content)</h4>
+                            <p class="text-brand-gray text-sm">创作高质量的原创研究报告、数据集与权威指南，使外部媒体自然引用您的内容。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+                        <span class="text-brand-purple font-black text-xl w-8 flex-shrink-0">04</span>
+                        <div>
+                            <h4 class="font-black text-brand-dark mb-1">AI 友好结构化 (AI-Friendly Formatting)</h4>
+                            <p class="text-brand-gray text-sm">使用 FAQ、How-To 等可供 LLM 直接提取的内容格式，并部署 JSON-LD Schema。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
+                        <span class="text-brand-orange font-black text-xl w-8 flex-shrink-0">05</span>
+                        <div>
+                            <h4 class="font-black text-brand-dark mb-1">可见性追踪 (Visibility Tracking)</h4>
+                            <p class="text-brand-gray text-sm">定期追踪品牌在主流 AI 工具中的引用率变化，调整内容策略。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. 对比表 -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-black text-brand-dark mb-8">4. GEO 适用平台对比</h2>
+                <div class="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+                    <table class="min-w-full text-left bg-white">
+                        <thead class="bg-brand-dark text-white">
+                            <tr>
+                                <th class="px-6 py-4 font-bold text-sm">AI 平台</th>
+                                <th class="px-6 py-4 font-bold text-sm">内容抓取方式</th>
+                                <th class="px-6 py-4 font-bold text-sm">GEO 优化重点</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-sm">
+                            <tr>
+                                <td class="px-6 py-4 font-bold text-brand-dark">ChatGPT (with search)</td>
+                                <td class="px-6 py-4 text-brand-gray">实时网络抓取 + 训练数据</td>
+                                <td class="px-6 py-4 text-brand-gray">品牌权威性、引用来源质量</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-6 py-4 font-bold text-brand-dark">Perplexity AI</td>
+                                <td class="px-6 py-4 text-brand-gray">实时网络搜索 + 引用显示</td>
+                                <td class="px-6 py-4 text-brand-gray">高 DA 引用来源、清晰摘要</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-bold text-brand-dark">Google AI Overviews</td>
+                                <td class="px-6 py-4 text-brand-gray">Google 索引结合 Gemini</td>
+                                <td class="px-6 py-4 text-brand-gray">E-E-A-T、结构化数据、精选摘要</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-6 py-4 font-bold text-brand-dark">Microsoft Copilot</td>
+                                <td class="px-6 py-4 text-brand-gray">Bing 索引 + GPT-4</td>
+                                <td class="px-6 py-4 text-brand-gray">Bing 排名 + 权威来源显示</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 5. FAQ -->
+            <section class="mb-16">
+                <h2 class="text-3xl font-black text-brand-dark mb-8">5. 常见问题 (FAQ)</h2>
+                <div class="space-y-4">
+                    <details class="group bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
+                        <summary class="flex justify-between items-center font-bold text-brand-dark cursor-pointer px-6 py-5 select-none">
+                            GEO 是 SEO 的替代品吗?
+                            <span class="text-brand-purple text-2xl group-open:rotate-45 transition-transform duration-200 flex-shrink-0">+</span>
+                        </summary>
+                        <div class="px-6 pb-5 text-brand-gray text-sm leading-relaxed border-t border-gray-100 pt-4">不是。GEO 与 <a href="/definitions/what-is-seo.html" class="text-brand-purple font-semibold hover:underline">SEO</a> 是互补关系。良好的 SEO 是 GEO 的基础，因为 AI 工具需要从已被搜索引擎收录的高质量网页中提取信息。两者应同步推进。</div>
+                    </details>
+                    <details class="group bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
+                        <summary class="flex justify-between items-center font-bold text-brand-dark cursor-pointer px-6 py-5 select-none">
+                            GEO 效果可以追踪吗?
+                            <span class="text-brand-purple text-2xl group-open:rotate-45 transition-transform duration-200 flex-shrink-0">+</span>
+                        </summary>
+                        <div class="px-6 pb-5 text-brand-gray text-sm leading-relaxed border-t border-gray-100 pt-4">可以。通过定期追踪您的品牌名称和核心关键词在 ChatGPT、Perplexity 等平台的出现情况，以及 Google Search Console 中的 AI Overview 触发数据来评估 GEO 成效。</div>
+                    </details>
+                    <details class="group bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
+                        <summary class="flex justify-between items-center font-bold text-brand-dark cursor-pointer px-6 py-5 select-none">
+                            多久能看到 GEO 效果?
+                            <span class="text-brand-purple text-2xl group-open:rotate-45 transition-transform duration-200 flex-shrink-0">+</span>
+                        </summary>
+                        <div class="px-6 pb-5 text-brand-gray text-sm leading-relaxed border-t border-gray-100 pt-4">相比 SEO 更快。高质量的引用内容发布后 1–3 个月内通常可观察到 AI 可见性变化。实体信号的建立 (Knowledge Panel) 可能需要 3–6 个月。</div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Final CTA -->
+            <div class="bg-brand-dark rounded-2xl p-10 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-purple/20 rounded-full blur-3xl -mr-16 -mt-16"></div>
+                <div class="relative">
+                    <p class="text-brand-purple text-xs font-black uppercase tracking-widest mb-4">GEO 专家榜单</p>
+                    <h3 class="text-2xl font-black mb-4">寻找专业的 GEO 执行团队?</h3>
+                    <p class="text-white/40 mb-8 max-w-lg">我们的数据库已收录了马来西亚及全球专注于 AI Search 与 GEO 优化的顶尖机构。</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="/rankings/global-geo-experts.html" class="bg-brand-purple text-white font-bold px-6 py-3 rounded-xl hover:opacity-90 transition text-sm">查看 GEO 专家榜单</a>
+                        <a href="/agencies.html" class="border border-white/20 text-white/70 font-bold px-6 py-3 rounded-xl hover:border-white/40 hover:text-white transition text-sm">浏览全部机构</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="bg-brand-dark border-t border-white/10 pt-16 pb-8 mt-16">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="/" class="flex flex-col gap-2">
+                        <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-80 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+                    </a>
+                    <p class="text-sm text-white/30 mt-4 leading-relaxed">您的中立、客观的中文 SEO 与 AI Search 知识平台与评测数据库。</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-black mb-4 text-xs uppercase tracking-widest">平台目录</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/agencies.html" class="text-white/40 hover:text-white transition text-sm">SEO 机构榜单</a></li>
+                        <li><a href="/rankings/global-geo-experts.html" class="text-white/40 hover:text-white transition text-sm">GEO 专家榜</a></li>
+                        <li><a href="/ranking-methodology.html" class="text-white/40 hover:text-white transition text-sm">排名评测机制</a></li>
+                        <li><a href="/submit-agency.html" class="text-brand-purple hover:text-white transition text-sm font-semibold">提交机构数据</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black mb-4 text-xs uppercase tracking-widest">知识中心</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/definitions/what-is-seo.html" class="text-white/40 hover:text-white transition text-sm">什么是 SEO?</a></li>
+                        <li><a href="/definitions/what-is-geo.html" class="text-white/40 hover:text-white transition text-sm">什么是 GEO?</a></li>
+                        <li><a href="/ai-search/ai-search-guide.html" class="text-white/40 hover:text-white transition text-sm">AI 搜索与发现</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black mb-4 text-xs uppercase tracking-widest">解决方案</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/solutions/seo-services.html" class="text-white/40 hover:text-white transition text-sm">SEO 服务指南</a></li>
+                        <li><a href="/solutions/geo-services.html" class="text-white font-semibold text-sm">GEO 服务指南</a></li>
+                        <li><a href="/solutions/aeo-services.html" class="text-white/40 hover:text-white transition text-sm">AEO 服务指南</a></li>
+                        <li><a href="/case-studies.html" class="text-white/40 hover:text-white transition text-sm">案例研究</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-white/20">
+                <p>© <span id="year"></span> Agency Semrush Data Platform. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

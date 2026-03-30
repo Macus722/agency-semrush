@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core Pages -->
+  <url><loc>https://agencysemrush.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://agencysemrush.com/agencies.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://agencysemrush.com/articles.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agencysemrush.com/about-platform.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://agencysemrush.com/case-studies.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/ranking-methodology.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/submit-agency.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- Rankings -->
+  <url><loc>https://agencysemrush.com/rankings/global-seo-agencies.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://agencysemrush.com/rankings/malaysia-seo-experts.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://agencysemrush.com/rankings/global-geo-experts.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Definitions -->
+  <url><loc>https://agencysemrush.com/definitions/what-is-seo.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agencysemrush.com/definitions/what-is-aeo.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agencysemrush.com/definitions/what-is-geo.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agencysemrush.com/definitions/what-is-local-seo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- AI Search -->
+  <url><loc>https://agencysemrush.com/ai-search/ai-search-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agencysemrush.com/ai-search/aeo-ranking-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agencysemrush.com/ai-search/geo-ranking-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://agencysemrush.com/ai-search/chatgpt-seo-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Articles / Knowledge Guides -->
+  <url><loc>https://agencysemrush.com/articles/keyword-research-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/articles/technical-seo-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/articles/local-seo-complete-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/articles/link-building-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/articles/on-page-seo-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/articles/content-seo-strategy.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/articles/seo-tools-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/articles/seo-mistakes-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/articles/industry-keywords-seo.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Industry Pages -->
+  <url><loc>https://agencysemrush.com/industries/ecommerce.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/industries/real-estate.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/industries/finance.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/industries/beauty.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/industries/fnb.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/industries/b2b.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/industries/medical.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Solutions -->
+  <url><loc>https://agencysemrush.com/solutions/seo-services.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/solutions/aeo-services.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://agencysemrush.com/solutions/geo-services.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+</urlset>

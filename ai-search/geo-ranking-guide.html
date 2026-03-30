@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>GEO 排名技术指南 | Agency Semrush</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="Agency Semrush">
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{colors:{brand:{orange:'#ff642d',green:'#00ce7d',purple:'#8a3ffc',dark:'#1c1c1c',gray:'#5e617d',light:'#f5f6f8'}},fontFamily:{sans:['Montserrat','"PingFang SC"','sans-serif']}}}};</script>
+</head>
+<body class="bg-brand-light text-brand-dark font-sans leading-relaxed">
+                                        <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-brand-dark/90 backdrop-blur-md">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10 flex items-center justify-between h-28">
+            <a href="/index.html" class="flex items-center">
+                <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-90 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+            </a>
+            <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/60">
+                <!-- SEO Fundamentals Dropdown -->
+                <div class="relative group h-full py-4">
+                    <button class="hover:text-white transition flex items-center gap-1">
+                        SEO 基础
+                        <svg class="w-4 h-4 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-12 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 w-48 text-center origin-top-left transition-all">
+                        <a href="/definitions/what-is-seo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 SEO</a>
+                        <a href="/definitions/what-is-aeo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 AEO</a>
+                        <a href="/definitions/what-is-geo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 GEO</a>
+                    </div>
+                </div>
+
+                <a href="/ai-search/ai-search-guide.html" class="hover:text-white transition">AI Search</a>
+
+                <!-- Industry Dropdown -->
+                <div class="relative group h-full py-4">
+                    <button class="hover:text-white transition flex items-center gap-1">
+                        行业SEO
+                        <svg class="w-4 h-4 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-12 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 w-48 text-center origin-top-left transition-all">
+                        <a href="/industries/ecommerce.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">电商 E-Commerce</a>
+                        <a href="/industries/real-estate.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">房产 Property</a>
+                        <a href="/industries/finance.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">金融 Finance</a>
+                        <a href="/industries/beauty.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">医美 Beauty</a>
+                        <a href="/industries/fnb.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">餐饮 F&amp;B</a>
+                        <a href="/industries/b2b.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">B2B 技术</a>
+                    </div>
+                </div>
+
+                <a href="/articles.html" class="hover:text-white transition">知识库</a>
+                <a href="/agencies.html" class="hover:text-white transition">机构排名</a>
+            </div>
+            <a href="/agencies.html" class="hidden lg:block text-sm font-bold bg-brand-green text-white px-5 py-2 rounded-lg hover:opacity-90 transition">探索排行榜</a>
+        </div>
+    </nav>
+    <header class="bg-brand-dark py-20 px-6">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-brand-purple font-bold text-sm tracking-widest uppercase mb-6 block">深度指南</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">GEO (生成式引擎优化) 排名架构</h1>
+            <p class="text-xl text-gray-300 font-medium">重构网站语义模型以适应 AI 时代。</p>
+        </div>
+    </header>
+    <main class="max-w-3xl mx-auto px-6 py-16 text-brand-gray prose prose-lg">
+        <img src="https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=1400&q=80" alt="数据分析师研究 GEO 排名因素" class="w-full rounded-2xl shadow-lg mb-12" loading="lazy" decoding="async">
+
+        <h2 class="text-3xl font-bold text-brand-dark">从关键词匹配到语义实体：GEO 的底层逻辑</h2>
+        <p>传统 SEO 的核心是"关键词 → 页面"的匹配模型。但在生成式搜索引擎 (如 ChatGPT, Perplexity, Gemini) 中，排名的底层逻辑已彻底改变：模型不再"检索页面"，而是"合成答案"。这意味着您的内容需要被模型理解为一个<strong class="text-brand-dark">可信的语义实体 (Semantic Entity)</strong>，而非仅仅是一个包含目标关键词的 URL。</p>
+
+        <h3 class="text-2xl font-bold text-brand-dark mt-12">GEO 排名的三大核心支柱</h3>
+
+        <div class="bg-white border border-gray-100 p-6 rounded-xl shadow-sm my-8 not-prose">
+            <div class="flex items-start gap-4 mb-6">
+                <span class="text-3xl">🏗️</span>
+                <div>
+                    <h4 class="font-black text-brand-dark text-lg mb-2">支柱一：结构化语义标记</h4>
+                    <p class="text-sm text-brand-gray">使用 Schema.org 的 JSON-LD 标记为您的内容创建机器可读的语义层。重点部署 <code class="text-brand-purple">FAQPage</code>, <code class="text-brand-purple">HowTo</code>, <code class="text-brand-purple">Article</code> 和 <code class="text-brand-purple">Organization</code> 类型。这是 AI 模型在 RAG 检索阶段最高效的信息提取路径。</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 mb-6">
+                <span class="text-3xl">📊</span>
+                <div>
+                    <h4 class="font-black text-brand-dark text-lg mb-2">支柱二：原创数据与引用触发器</h4>
+                    <p class="text-sm text-brand-gray">提供独家的行业统计数据、研究报告和量化基准。当 AI 模型需要用数据支撑其生成的答案时，包含具体数字的内容源 (如"根据 2026 年调研，73% 的品牌...") 会被优先引用。这就是所谓的 <strong>Citation Trigger (引用触发器)</strong>。</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4">
+                <span class="text-3xl">🔗</span>
+                <div>
+                    <h4 class="font-black text-brand-dark text-lg mb-2">支柱三：权威性信号网络</h4>
+                    <p class="text-sm text-brand-gray">来自高权重域名 (如 .edu, .gov, 顶级行业媒体) 的反向链接在 RAG 模型的信任评估中依然起着决定性作用。Digital PR 策略在 GEO 时代不但没有过时，反而变得更加重要。</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-bold text-brand-dark mt-12">传统 SEO vs. GEO：关键差异对照表</h3>
+        <div class="overflow-x-auto my-8 not-prose">
+            <table class="w-full text-sm border-collapse">
+                <thead><tr class="bg-brand-dark text-white"><th class="px-4 py-3 text-left font-bold rounded-tl-lg">维度</th><th class="px-4 py-3 text-left font-bold">传统 SEO</th><th class="px-4 py-3 text-left font-bold rounded-tr-lg">GEO (生成式引擎优化)</th></tr></thead>
+                <tbody>
+                    <tr class="border-b border-gray-100"><td class="px-4 py-3 font-bold text-brand-dark">排名目标</td><td class="px-4 py-3 text-brand-gray">SERP 蓝色链接位置</td><td class="px-4 py-3 text-brand-gray">AI 生成答案中的引用来源</td></tr>
+                    <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-3 font-bold text-brand-dark">核心信号</td><td class="px-4 py-3 text-brand-gray">关键词密度, 外链数量</td><td class="px-4 py-3 text-brand-gray">语义相关性, 事实准确性, 权威引用</td></tr>
+                    <tr class="border-b border-gray-100"><td class="px-4 py-3 font-bold text-brand-dark">内容格式</td><td class="px-4 py-3 text-brand-gray">长尾关键词页面</td><td class="px-4 py-3 text-brand-gray">结构化数据, 表格, 定义列表</td></tr>
+                    <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-3 font-bold text-brand-dark">衡量指标</td><td class="px-4 py-3 text-brand-gray">排名位置, 自然流量</td><td class="px-4 py-3 text-brand-gray">引用率, 品牌提及频次</td></tr>
+                    <tr><td class="px-4 py-3 font-bold text-brand-dark rounded-bl-lg">工具支持</td><td class="px-4 py-3 text-brand-gray">Ahrefs, SEMrush</td><td class="px-4 py-3 text-brand-gray rounded-br-lg">Otterly.ai, Profound, 自建监测</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="bg-brand-light p-8 rounded-xl border-l-4 border-brand-green mt-12 not-prose">
+            <h4 class="font-bold text-brand-dark mb-2">✅ 行动清单：GEO 快速启动</h4>
+            <ul class="space-y-2 text-sm text-brand-gray">
+                <li>□ 审查 robots.txt，确保不阻止 OAI-SearchBot, ClaudeBot, GoogleOther</li>
+                <li>□ 为核心页面部署 FAQPage 和 HowTo Schema</li>
+                <li>□ 在所有行业报告中嵌入可引用的原创统计数据</li>
+                <li>□ 建立 Digital PR 管道，每月获取 3-5 个高权重域名外链</li>
+                <li>□ 注册 Otterly.ai 监测品牌在 AI 回答中的引用表现</li>
+            </ul>
+        </div>
+
+        <div class="mt-16 flex gap-4">
+            <a href="/ai-search/chatgpt-seo-guide.html" class="text-brand-purple font-bold hover:underline">← ChatGPT SEO 指南</a>
+            <span class="text-gray-300">|</span>
+            <a href="/rankings/global-geo-experts.html" class="text-brand-purple font-bold hover:underline">查看 GEO 专家榜单 →</a>
+        </div>
+    </main>
+
+<footer class="bg-brand-dark pt-20 pb-10 border-t border-brand-gray/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="/" class="flex flex-col gap-2">
+                        <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-80 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+                    </a>
+                    <p class="text-sm text-brand-gray text-gray-400 mt-4 leading-relaxed">
+                        您的中立、客观的中文 SEO 与 AI Search 知识平台与评测数据库。
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">平台目录</h4>
+                    <ul class="space-y-3 shrink">
+                        <li><a href="/agencies.html" class="text-gray-400 hover:text-white transition text-sm">SEO 机构榜单</a></li>
+                        <li><a href="/rankings/global-geo-experts.html" class="text-gray-400 hover:text-white transition text-sm">GEO 专家榜</a></li>
+                        <li><a href="/ranking-methodology.html" class="text-gray-400 hover:text-white transition text-sm">排名评测机制</a></li>
+                        <li><a href="/submit-agency.html" class="text-brand-purple hover:text-white transition text-sm font-semibold">提交机构数据</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">知识中心</h4>
+                    <ul class="space-y-3 shrink">
+                        <li><a href="/definitions/what-is-seo.html" class="text-gray-400 hover:text-white transition text-sm">什么是 SEO?</a></li>
+                        <li><a href="/definitions/what-is-geo.html" class="text-gray-400 hover:text-white transition text-sm">什么是 GEO?</a></li>
+                        <li><a href="/ai-search/ai-search-guide.html" class="text-gray-400 hover:text-white transition text-sm">AI 搜索与发现</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">关于平台</h4>
+                    <ul class="space-y-3 shrink">
+                        <li><a href="/about-platform.html" class="text-gray-400 hover:text-white transition text-sm">关于我们</a></li>
+                        <li><a href="/articles.html" class="text-gray-400 hover:text-white transition text-sm">最新动态</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition text-sm">隐私保护</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 中国Agency Semrush Data Platform. 保留所有权利.</p>
+                <div class="mt-4 sm:mt-0 flex space-x-6">
+                    <a href="#" class="hover:text-white transition">Twitter</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

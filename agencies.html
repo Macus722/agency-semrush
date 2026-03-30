@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球 SEO 机构排行榜 | Agency Semrush数据库</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="Agency Semrush">
+    <meta name="description" content="基于真实转化率与核心算法稳定性中立评估的全球顶尖 SEO 公司排行榜。按地区、行业筛选，找到最适合您的 SEO 合作伙伴。">
+    <link rel="canonical" href="https://agencysemrush.com/agencies.html" />
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { orange: '#ff642d', green: '#00ce7d', purple: '#8a3ffc', dark: '#1c1c1c', gray: '#5e617d', light: '#f5f6f8' }
+                    },
+                    fontFamily: { sans: ['Montserrat', '"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .agency-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .agency-card:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(0,0,0,0.10); }
+    </style>
+</head>
+<body class="bg-brand-light font-sans text-brand-dark antialiased">
+
+    <!-- ═══ NAVBAR ═══ -->
+                                    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-brand-dark/90 backdrop-blur-md">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10 flex items-center justify-between h-28">
+            <a href="/index.html" class="flex items-center">
+                <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-90 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+            </a>
+            <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/60">
+                <!-- SEO Fundamentals Dropdown -->
+                <div class="relative group h-full py-4">
+                    <button class="hover:text-white transition flex items-center gap-1">
+                        SEO 基础
+                        <svg class="w-4 h-4 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-12 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 w-48 text-center origin-top-left transition-all">
+                        <a href="/definitions/what-is-seo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 SEO</a>
+                        <a href="/definitions/what-is-aeo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 AEO</a>
+                        <a href="/definitions/what-is-geo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 GEO</a>
+                    </div>
+                </div>
+
+                <a href="/ai-search/ai-search-guide.html" class="hover:text-white transition">AI Search</a>
+
+                <!-- Industry Dropdown -->
+                <div class="relative group h-full py-4">
+                    <button class="hover:text-white transition flex items-center gap-1">
+                        行业SEO
+                        <svg class="w-4 h-4 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-12 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 w-48 text-center origin-top-left transition-all">
+                        <a href="/industries/ecommerce.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">电商 E-Commerce</a>
+                        <a href="/industries/real-estate.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">房产 Property</a>
+                        <a href="/industries/finance.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">金融 Finance</a>
+                        <a href="/industries/beauty.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">医美 Beauty</a>
+                        <a href="/industries/fnb.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">餐饮 F&amp;B</a>
+                        <a href="/industries/b2b.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">B2B 技术</a>
+                    </div>
+                </div>
+
+                <a href="/articles.html" class="hover:text-white transition">知识库</a>
+                <a href="/agencies.html" class="hover:text-white transition">机构排名</a>
+            </div>
+            <a href="/agencies.html" class="hidden lg:block text-sm font-bold bg-brand-green text-white px-5 py-2 rounded-lg hover:opacity-90 transition">探索排行榜</a>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO HEADER — Two-column, minimal ═══ -->
+    <header class="bg-brand-dark pt-28 pb-12">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-end justify-between gap-8">
+            <div>
+                <p class="text-brand-green text-xs font-black uppercase tracking-widest mb-3">数据评测平台</p>
+                <h1 class="text-4xl lg:text-5xl font-black text-white leading-tight">顶尖 SEO 公司<br/><span class="text-brand-green">数据评测平台</span></h1>
+                <p class="text-white/40 mt-4 max-w-lg text-sm leading-relaxed">我们谢绝商业赞助，仅按数据说话。按地区、垂直行业或特定技术需求深度筛选 1,240+ 家机构。</p>
+            </div>
+            <div class="flex flex-col gap-2 items-start md:items-end flex-shrink-0">
+                <div class="flex gap-6">
+                    <div class="text-right">
+                        <p class="text-3xl font-black text-white">1,240<span class="text-brand-green">+</span></p>
+                        <p class="text-white/30 text-xs">已收录机构</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-3xl font-black text-white">9<span class="text-brand-purple">+</span></p>
+                        <p class="text-white/30 text-xs">国家/地区</p>
+                    </div>
+                </div>
+                <a href="/ranking-methodology.html" class="text-brand-purple text-xs font-bold uppercase tracking-wide hover:text-white transition mt-2">了解 Authority Score 计算标准 →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══ MAIN CONTENT — Sidebar + Results ═══ -->
+    <div class="max-w-screen-xl mx-auto px-6 lg:px-10 py-10">
+        <div class="flex flex-col lg:flex-row gap-8">
+
+            <!-- ── LEFT SIDEBAR FILTERS ── -->
+            <aside class="lg:w-72 flex-shrink-0">
+                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 lg:sticky lg:top-24">
+                    <h2 class="text-sm font-black text-brand-dark uppercase tracking-wider mb-6 pb-4 border-b border-gray-100">筛选条件</h2>
+
+                    <!-- Search -->
+                    <div class="mb-5">
+                        <label class="block text-xs font-bold text-brand-gray uppercase tracking-wider mb-2">检索名称</label>
+                        <input id="search-input" type="text" placeholder="搜索机构名称或描述..."
+                            class="w-full bg-brand-light border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/10 transition">
+                    </div>
+
+                    <!-- Country -->
+                    <div class="mb-5">
+                        <label class="block text-xs font-bold text-brand-gray uppercase tracking-wider mb-2">地区</label>
+                        <div id="country-buttons" class="flex flex-wrap gap-2">
+                            <button data-val="" class="filter-btn active text-xs font-bold px-3 py-1.5 rounded-lg border border-brand-dark bg-brand-dark text-white transition">全部</button>
+                            <button data-val="马来西亚" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">马来西亚</button>
+                            <button data-val="新加坡" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">新加坡</button>
+                            <button data-val="中国" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">中国/港台</button>
+                            <button data-val="美国" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">美国/英国</button>
+                            <button data-val="全球" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">全球</button>
+                        </div>
+                    </div>
+
+                    <!-- Industry -->
+                    <div class="mb-5">
+                        <label class="block text-xs font-bold text-brand-gray uppercase tracking-wider mb-2">行业</label>
+                        <div id="industry-buttons" class="flex flex-wrap gap-2">
+                            <button data-val="" class="filter-btn active text-xs font-bold px-3 py-1.5 rounded-lg border border-brand-dark bg-brand-dark text-white transition">全部</button>
+                            <button data-val="电子商务" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">电子商务</button>
+                            <button data-val="SaaS" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">SaaS</button>
+                            <button data-val="金融" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">金融</button>
+                            <button data-val="医疗" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">医疗</button>
+                            <button data-val="房地产" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">房地产</button>
+                        </div>
+                    </div>
+
+                    <!-- Service -->
+                    <div class="mb-6">
+                        <label class="block text-xs font-bold text-brand-gray uppercase tracking-wider mb-2">核心专长</label>
+                        <div id="service-buttons" class="flex flex-wrap gap-2">
+                            <button data-val="" class="filter-btn active text-xs font-bold px-3 py-1.5 rounded-lg border border-brand-dark bg-brand-dark text-white transition">全部</button>
+                            <button data-val="技术基础" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">技术SEO</button>
+                            <button data-val="内容" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">内容</button>
+                            <button data-val="外链" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">外链</button>
+                            <button data-val="AEO" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">AEO</button>
+                            <button data-val="GEO" class="filter-btn text-xs font-bold px-3 py-1.5 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-purple hover:text-brand-purple transition">GEO</button>
+                        </div>
+                    </div>
+
+                    <button id="reset-filters" class="w-full text-xs font-bold text-brand-gray hover:text-brand-dark transition py-2 border border-gray-200 rounded-lg hover:border-brand-dark">重置筛选</button>
+                </div>
+            </aside>
+
+            <!-- ── RIGHT RESULTS AREA ── -->
+            <main class="flex-1 min-w-0">
+                <!-- Results bar -->
+                <div class="flex items-center justify-between mb-6 flex-wrap gap-3">
+                    <p id="results-count" class="text-brand-gray font-bold text-sm">显示 <strong class="text-brand-dark">9</strong> 家服务商</p>
+                    <div class="flex gap-2">
+                        <button id="sort-best" class="text-xs font-black px-4 py-2 rounded-lg bg-brand-dark text-white">最佳匹配</button>
+                        <button id="sort-rating" class="text-xs font-bold px-4 py-2 rounded-lg border border-gray-200 text-brand-gray hover:bg-white hover:border-brand-dark transition">最高评分</button>
+                        <button id="sort-recent" class="text-xs font-bold px-4 py-2 rounded-lg border border-gray-200 text-brand-gray hover:bg-white hover:border-brand-dark transition">最新入驻</button>
+                    </div>
+                </div>
+
+                <!-- Cards Grid — 2 col -->
+                <div id="agency-grid" class="grid md:grid-cols-2 gap-4 mb-8"></div>
+
+                <!-- Pagination -->
+                <div id="pagination-container" class="flex justify-center"></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="bg-brand-dark border-t border-white/10 pt-16 pb-8 mt-16">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="/" class="flex flex-col gap-2">
+                        <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-80 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+                    </a>
+                    <p class="text-sm text-white/30 mt-4 leading-relaxed">您的中立、客观的中文 SEO 与 AI Search 知识平台与评测数据库。</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-black mb-4 text-xs uppercase tracking-widest">平台目录</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/agencies.html" class="text-white/40 hover:text-white transition text-sm">SEO 机构榜单</a></li>
+                        <li><a href="/rankings/global-geo-experts.html" class="text-white/40 hover:text-white transition text-sm">GEO 专家榜</a></li>
+                        <li><a href="/ranking-methodology.html" class="text-white/40 hover:text-white transition text-sm">排名评测机制</a></li>
+                        <li><a href="/submit-agency.html" class="text-brand-purple hover:text-white transition text-sm font-semibold">提交机构数据</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black mb-4 text-xs uppercase tracking-widest">知识中心</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/definitions/what-is-seo.html" class="text-white/40 hover:text-white transition text-sm">什么是 SEO?</a></li>
+                        <li><a href="/definitions/what-is-geo.html" class="text-white/40 hover:text-white transition text-sm">什么是 GEO?</a></li>
+                        <li><a href="/ai-search/ai-search-guide.html" class="text-white/40 hover:text-white transition text-sm">AI 搜索与发现</a></li>
+                        <li><a href="/articles.html" class="text-white/40 hover:text-white transition text-sm">SEO 文章</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black mb-4 text-xs uppercase tracking-widest">关于平台</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/about-platform.html" class="text-white/40 hover:text-white transition text-sm">关于我们</a></li>
+                        <li><a href="/articles.html" class="text-white/40 hover:text-white transition text-sm">最新动态</a></li>
+                        <li><a href="mailto:hello@agencysemrush.com" class="text-white/40 hover:text-white transition text-sm">hello@agencysemrush.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-white/20">
+                <p>© <span id="year"></span> Agency Semrush Data Platform. 保留所有权利.</p>
+                <div class="mt-4 sm:mt-0 flex gap-6">
+                    <a href="#" class="hover:text-white transition">Twitter</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/data/agencies_data.js"></script>
+    <script>
+        // ── State ──
+        let currentPage = 1;
+        const itemsPerPage = 6;
+        let currentFiltered = [...agencyData];
+        let sortMode = 'best';
+        let activeFilters = { country: '', industry: '', service: '' };
+
+        // ── DOM ──
+        const grid = document.getElementById('agency-grid');
+        const paginationContainer = document.getElementById('pagination-container');
+        const resultsCount = document.getElementById('results-count');
+        const searchInput = document.getElementById('search-input');
+
+        // ── Card renderer ──
+        function createCard(agency) {
+            const el = document.createElement('div');
+            el.className = 'agency-card bg-white rounded-2xl border border-gray-200 p-6 flex flex-col cursor-pointer';
+            el.addEventListener('click', () => { window.location.href = `/profile.html?id=${agency.id}`; });
+
+            const ratingColor = agency.rating >= 9.5 ? 'text-brand-green' : 'text-brand-purple';
+            const tags = agency.services.slice(0, 3).map(s =>
+                `<span class="text-xs font-bold px-2 py-1 bg-brand-light border border-gray-200 rounded-lg">${s}</span>`
+            ).join('');
+
+            const logoHtml = agency.logoUrl 
+                ? `<img src="${agency.logoUrl}" alt="${agency.name} Logo" class="w-12 h-12 rounded-xl object-contain border border-gray-100 p-1 bg-white flex-shrink-0" loading="lazy" decoding="async">`
+                : `<div class="w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center font-black text-white text-xs" style="background-color:${agency.logoBg}">${agency.logo}</div>`;
+
+            el.innerHTML = `
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        ${logoHtml}
+                        <div>
+                            <h3 class="font-black text-brand-dark text-base leading-tight">${agency.name}</h3>
+                            <p class="text-xs text-brand-gray font-medium mt-0.5">${agency.location}</p>
+                        </div>
+                    </div>
+                    <div class="text-right flex-shrink-0">
+                        <p class="text-2xl font-black ${ratingColor} leading-none">${agency.rating.toFixed(1)}</p>
+                        <p class="text-xs text-brand-gray">/10.0</p>
+                    </div>
+                </div>
+                <p class="text-sm text-brand-gray leading-relaxed line-clamp-2 mb-4 flex-1">${agency.tagline}</p>
+                <div class="flex flex-wrap gap-1.5 mb-4">${tags}</div>
+                <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                    <span class="text-xs text-brand-gray font-medium">预算 ${agency.budget}</span>
+                    <span class="text-xs font-black bg-brand-purple text-white px-3 py-1.5 rounded-lg hover:bg-brand-dark transition">阅读评测 →</span>
+                </div>`;
+            return el;
+        }
+
+        // ── Pagination ──
+        function renderPagination(total) {
+            paginationContainer.innerHTML = '';
+            if (total <= 1) return;
+            const nav = document.createElement('nav');
+            nav.className = 'flex items-center gap-2';
+            const prev = document.createElement('button');
+            prev.textContent = '← 上一页';
+            prev.className = `text-xs font-bold px-4 py-2 rounded-lg border ${currentPage === 1 ? 'border-gray-100 text-gray-300 cursor-not-allowed' : 'border-gray-200 text-brand-gray hover:border-brand-dark hover:text-brand-dark transition'}`;
+            prev.disabled = currentPage === 1;
+            prev.onclick = () => { if (currentPage > 1) { currentPage--; renderAgencies(currentFiltered); }};
+            nav.appendChild(prev);
+            for (let i = 1; i <= total; i++) {
+                const b = document.createElement('button');
+                b.textContent = i;
+                b.className = i === currentPage
+                    ? 'text-xs font-black px-4 py-2 rounded-lg bg-brand-green text-white'
+                    : 'text-xs font-bold px-4 py-2 rounded-lg border border-gray-200 text-brand-gray hover:border-brand-dark transition';
+                b.onclick = () => { currentPage = i; renderAgencies(currentFiltered); };
+                nav.appendChild(b);
+            }
+            const next = document.createElement('button');
+            next.textContent = '下一页 →';
+            next.className = `text-xs font-bold px-4 py-2 rounded-lg border ${currentPage === total ? 'border-gray-100 text-gray-300 cursor-not-allowed' : 'border-gray-200 text-brand-gray hover:border-brand-dark hover:text-brand-dark transition'}`;
+            next.disabled = currentPage === total;
+            next.onclick = () => { if (currentPage < total) { currentPage++; renderAgencies(currentFiltered); }};
+            nav.appendChild(next);
+            paginationContainer.appendChild(nav);
+        }
+
+        // ── Render ──
+        function renderAgencies(agencies) {
+            grid.innerHTML = '';
+            let sorted = [...agencies];
+            if (sortMode === 'rating') sorted.sort((a, b) => b.rating - a.rating);
+            else if (sortMode === 'recent') sorted.sort((a, b) => b.founded - a.founded);
+            const total = Math.ceil(sorted.length / itemsPerPage);
+            const items = sorted.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+            if (!items.length) {
+                grid.innerHTML = '<div class="col-span-2 text-center py-16 text-brand-gray"><p class="text-lg font-bold">未找到符合条件的机构</p><p class="text-sm mt-2">请尝试调整筛选条件</p></div>';
+            } else {
+                items.forEach(a => grid.appendChild(createCard(a)));
+            }
+            resultsCount.innerHTML = `显示 <strong class="text-brand-dark">${agencies.length}</strong> 家服务商`;
+            renderPagination(total);
+        }
+
+        // ── Filter logic ──
+        function applyFilters() {
+            const q = searchInput.value.toLowerCase().trim();
+            currentFiltered = agencyData.filter(a => {
+                const matchQ = !q || a.name.toLowerCase().includes(q) || a.description.toLowerCase().includes(q) || a.tagline.toLowerCase().includes(q);
+                const matchC = !activeFilters.country || a.location.includes(activeFilters.country) || a.geoFocus.some(g => g.includes(activeFilters.country));
+                const matchI = !activeFilters.industry || a.industries.some(i => i.includes(activeFilters.industry));
+                const matchS = !activeFilters.service || a.services.some(s => s.includes(activeFilters.service));
+                return matchQ && matchC && matchI && matchS;
+            });
+            currentPage = 1;
+            renderAgencies(currentFiltered);
+        }
+
+        // ── Button filter groups ──
+        function setupButtonGroup(containerId, filterKey) {
+            const container = document.getElementById(containerId);
+            container.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    container.querySelectorAll('.filter-btn').forEach(b => {
+                        b.classList.remove('active', 'bg-brand-dark', 'text-white');
+                        b.classList.add('border-gray-200', 'text-brand-gray');
+                    });
+                    btn.classList.add('active', 'bg-brand-dark', 'text-white');
+                    btn.classList.remove('border-gray-200', 'text-brand-gray');
+                    activeFilters[filterKey] = btn.dataset.val;
+                    applyFilters();
+                });
+            });
+        }
+
+        setupButtonGroup('country-buttons', 'country');
+        setupButtonGroup('industry-buttons', 'industry');
+        setupButtonGroup('service-buttons', 'service');
+        searchInput.addEventListener('input', applyFilters);
+
+        // Sort buttons
+        function setSortMode(mode) {
+            sortMode = mode;
+            ['sort-best','sort-rating','sort-recent'].forEach(id => {
+                const btn = document.getElementById(id);
+                const isActive = id === `sort-${mode}`;
+                btn.className = isActive
+                    ? 'text-xs font-black px-4 py-2 rounded-lg bg-brand-dark text-white'
+                    : 'text-xs font-bold px-4 py-2 rounded-lg border border-gray-200 text-brand-gray hover:bg-white hover:border-brand-dark transition';
+            });
+            renderAgencies(currentFiltered);
+        }
+        document.getElementById('sort-best').onclick = () => setSortMode('best');
+        document.getElementById('sort-rating').onclick = () => setSortMode('rating');
+        document.getElementById('sort-recent').onclick = () => setSortMode('recent');
+
+        // Reset
+        document.getElementById('reset-filters').onclick = () => {
+            searchInput.value = '';
+            activeFilters = { country: '', industry: '', service: '' };
+            ['country-buttons','industry-buttons','service-buttons'].forEach(id => {
+                const c = document.getElementById(id);
+                c.querySelectorAll('.filter-btn').forEach((b, i) => {
+                    if (i === 0) { b.classList.add('bg-brand-dark','text-white'); b.classList.remove('border-gray-200','text-brand-gray'); }
+                    else { b.classList.remove('bg-brand-dark','text-white'); b.classList.add('border-gray-200','text-brand-gray'); }
+                });
+            });
+            currentFiltered = [...agencyData];
+            currentPage = 1;
+            renderAgencies(currentFiltered);
+        };
+
+        // Mobile nav toggle
+        const navToggle = document.getElementById('nav-toggle');
+        if (navToggle) {
+            navToggle.addEventListener('click', function() {
+                const p = document.getElementById('nav-mobile-panel');
+                const o = document.getElementById('nav-icon-open');
+                const c = document.getElementById('nav-icon-close');
+                if (!p) return;
+                const h = p.classList.contains('hidden');
+                p.classList.toggle('hidden');
+                if (o) o.classList.toggle('hidden', !h);
+                if (c) c.classList.toggle('hidden', h);
+                this.setAttribute('aria-expanded', String(h));
+            });
+        }
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+        renderAgencies(agencyData);
+    </script>
+</body>
+</html>

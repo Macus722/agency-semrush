@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术 SEO (Technical SEO) 审计指南 | Agency Semrush</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="Agency Semrush">
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{colors:{brand:{orange:'#ff642d',green:'#00ce7d',purple:'#8a3ffc',dark:'#1c1c1c',gray:'#5e617d',light:'#f5f6f8'}},fontFamily:{sans:['Montserrat','"PingFang SC"','sans-serif']}}}};</script>
+</head>
+<body class="bg-brand-light text-brand-dark font-sans leading-relaxed">
+                                <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-brand-dark/90 backdrop-blur-md">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10 flex items-center justify-between h-28">
+            <a href="/index.html" class="flex items-center">
+                <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-90 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+            </a>
+            <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/60">
+                <!-- SEO Fundamentals Dropdown -->
+                <div class="relative group h-full py-4">
+                    <button class="hover:text-white transition flex items-center gap-1">
+                        SEO 基础
+                        <svg class="w-4 h-4 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-12 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 w-48 text-center origin-top-left transition-all">
+                        <a href="/definitions/what-is-seo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 SEO</a>
+                        <a href="/definitions/what-is-aeo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 AEO</a>
+                        <a href="/definitions/what-is-geo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 GEO</a>
+                    </div>
+                </div>
+
+                <a href="/ai-search/ai-search-guide.html" class="hover:text-white transition">AI Search</a>
+
+                <!-- Industry Dropdown -->
+                <div class="relative group h-full py-4">
+                    <button class="hover:text-white transition flex items-center gap-1">
+                        行业SEO
+                        <svg class="w-4 h-4 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-12 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 w-48 text-center origin-top-left transition-all">
+                        <a href="/industries/ecommerce.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">电商 E-Commerce</a>
+                        <a href="/industries/real-estate.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">房产 Property</a>
+                        <a href="/industries/finance.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">金融 Finance</a>
+                        <a href="/industries/beauty.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">医美 Beauty</a>
+                        <a href="/industries/fnb.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">餐饮 F&amp;B</a>
+                        <a href="/industries/b2b.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">B2B 技术</a>
+                    </div>
+                </div>
+
+                <a href="/articles.html" class="hover:text-white transition">知识库</a>
+                <a href="/agencies.html" class="hover:text-white transition">机构排名</a>
+            </div>
+            <a href="/agencies.html" class="hidden lg:block text-sm font-bold bg-brand-green text-white px-5 py-2 rounded-lg hover:opacity-90 transition">探索排行榜</a>
+        </div>
+    </nav>
+    <header class="bg-brand-dark py-20 px-6 pt-28">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-brand-green font-bold text-sm tracking-widest uppercase mb-6 block">深度指南</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">技术 SEO (Technical SEO) 审计指南</h1>
+            <p class="text-xl text-gray-300 font-medium leading-relaxed">抓取预算、Core Web Vitals 及服务端渲染 (SSR) 优化详解。</p>
+        </div>
+    </header>
+    <main class="max-w-3xl mx-auto px-6 py-16 text-brand-gray prose prose-lg">
+
+        <h2 class="text-3xl font-bold text-brand-dark">为什么技术 SEO 是一切的基础？</h2>
+        <p>如果把 SEO 比作一座建筑，那么<strong class="text-brand-dark">技术 SEO 就是地基</strong>。无论您的内容多么优秀、外链多么强大，如果搜索引擎爬虫无法高效抓取和索引您的页面，一切都是空谈。技术 SEO 确保您的网站架构、服务器响应和代码质量满足搜索引擎的抓取与渲染标准。</p>
+
+        <h3 class="text-2xl font-bold text-brand-dark mt-12">1. 抓取预算 (Crawl Budget) 管理</h3>
+        <p>每个网站都有一个由 Google 分配的"抓取预算"——即 Googlebot 在单位时间内愿意抓取的页面数量。对于拥有 10,000+ 页面的大型站点，优化抓取预算至关重要。</p>
+        
+        <div class="bg-white border border-gray-100 p-6 rounded-xl shadow-sm my-8 not-prose">
+            <h4 class="font-black text-brand-dark text-lg mb-4">🔧 抓取预算优化清单</h4>
+            <ul class="space-y-3 text-sm text-brand-gray">
+                <li class="flex items-start gap-2">
+                    <span class="text-brand-green font-bold">✓</span>
+                    <span><strong class="text-brand-dark">清理低价值 URL：</strong>用 robots.txt 屏蔽搜索结果页、参数页、分页归档等非目标页面，避免浪费抓取资源。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-brand-green font-bold">✓</span>
+                    <span><strong class="text-brand-dark">优化 XML Sitemap：</strong>只包含需要被索引的规范 URL。按内容类型拆分为多个 Sitemap 文件 (产品、文章、分类)。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-brand-green font-bold">✓</span>
+                    <span><strong class="text-brand-dark">减少重定向链：</strong>确保所有内部链接直接指向最终 URL，避免 301/302 重定向链超过 2 跳。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-brand-green font-bold">✓</span>
+                    <span><strong class="text-brand-dark">修复服务器错误：</strong>定期监控 Google Search Console 的"抓取统计信息"报告，将 5xx 和 4xx 错误率控制在 1% 以下。</span>
+                </li>
+            </ul>
+        </div>
+
+        <h3 class="text-2xl font-bold text-brand-dark mt-12">2. Core Web Vitals 优化</h3>
+        <p>Core Web Vitals (核心网页体验指标) 是 Google 排名算法的直接信号。2024 年 3 月起，INP 正式取代 FID 成为新的交互性指标。</p>
+
+        <div class="overflow-x-auto my-8 not-prose">
+            <table class="w-full text-sm border-collapse">
+                <thead><tr class="bg-brand-dark text-white"><th class="px-4 py-3 text-left font-bold rounded-tl-lg">指标</th><th class="px-4 py-3 text-left font-bold">定义</th><th class="px-4 py-3 text-left font-bold">良好阈值</th><th class="px-4 py-3 text-left font-bold rounded-tr-lg">常见修复</th></tr></thead>
+                <tbody>
+                    <tr class="border-b border-gray-100"><td class="px-4 py-3 font-bold text-brand-dark">LCP</td><td class="px-4 py-3 text-brand-gray">最大内容绘制</td><td class="px-4 py-3 text-brand-green font-bold">≤ 2.5s</td><td class="px-4 py-3 text-brand-gray">优化图片格式 (WebP/AVIF)、预加载关键资源</td></tr>
+                    <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-3 font-bold text-brand-dark">INP</td><td class="px-4 py-3 text-brand-gray">交互到下一次绘制</td><td class="px-4 py-3 text-brand-green font-bold">≤ 200ms</td><td class="px-4 py-3 text-brand-gray">减少主线程阻塞、拆分长任务</td></tr>
+                    <tr><td class="px-4 py-3 font-bold text-brand-dark rounded-bl-lg">CLS</td><td class="px-4 py-3 text-brand-gray">累积布局偏移</td><td class="px-4 py-3 text-brand-green font-bold">≤ 0.1</td><td class="px-4 py-3 text-brand-gray rounded-br-lg">为图片/广告预留尺寸、避免动态注入内容</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="text-2xl font-bold text-brand-dark mt-12">3. JavaScript 渲染与 SSR/SSG</h3>
+        <p>现代 Web 应用大量使用 React, Vue, Next.js 等 JavaScript 框架。但 Googlebot 在渲染 JavaScript 时存在明显延迟——平均需要<strong class="text-brand-dark">额外 5-20 秒</strong>来完成"第二波"渲染索引 (Two-Wave Indexing)。</p>
+
+        <div class="grid md:grid-cols-3 gap-4 my-8 not-prose">
+            <div class="bg-white border border-gray-100 p-5 rounded-xl shadow-sm text-center">
+                <span class="text-3xl mb-3 block">⚡</span>
+                <h4 class="font-black text-brand-dark text-sm mb-2">SSR (服务端渲染)</h4>
+                <p class="text-xs text-brand-gray">服务器直接返回完整 HTML。最利于 SEO 但对服务器负载要求高。推荐方案：Next.js, Nuxt.js</p>
+            </div>
+            <div class="bg-white border border-gray-100 p-5 rounded-xl shadow-sm text-center">
+                <span class="text-3xl mb-3 block">📦</span>
+                <h4 class="font-black text-brand-dark text-sm mb-2">SSG (静态站点生成)</h4>
+                <p class="text-xs text-brand-gray">构建时预渲染所有页面。性能最优但不适合频繁更新的动态内容。推荐方案：Gatsby, Astro</p>
+            </div>
+            <div class="bg-white border border-gray-100 p-5 rounded-xl shadow-sm text-center">
+                <span class="text-3xl mb-3 block">🔄</span>
+                <h4 class="font-black text-brand-dark text-sm mb-2">ISR (增量静态再生)</h4>
+                <p class="text-xs text-brand-gray">结合 SSG 和 SSR 的优势。页面按需在后台重新生成。推荐方案：Next.js ISR, Vercel</p>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-bold text-brand-dark mt-12">4. 结构化数据 (Schema Markup)</h3>
+        <p>结构化数据使用 JSON-LD 格式帮助搜索引擎更精准地理解页面内容。正确实施后可获得富片段 (Rich Snippets)，包括星级评分、FAQ 折叠、产品价格等 SERP 增强展示。</p>
+        <ul class="space-y-2">
+            <li><strong class="text-brand-dark">Article Schema：</strong>适用于新闻和博客文章，可触发 Top Stories 轮播</li>
+            <li><strong class="text-brand-dark">Product Schema：</strong>电商页面必备，展示价格、库存状态和评分</li>
+            <li><strong class="text-brand-dark">LocalBusiness Schema：</strong>本地商户必备，增强 Google Map Pack 展示</li>
+            <li><strong class="text-brand-dark">BreadcrumbList Schema：</strong>优化 SERP 中的面包屑导航路径显示</li>
+        </ul>
+
+        <h3 class="text-2xl font-bold text-brand-dark mt-12">5. 安全与可访问性</h3>
+        <div class="bg-brand-light p-8 rounded-xl border-l-4 border-brand-purple mt-4 not-prose">
+            <ul class="space-y-3 text-sm text-brand-gray">
+                <li class="flex items-start gap-2"><span class="text-brand-purple font-bold">🔒</span> <strong class="text-brand-dark">HTTPS 强制：</strong>全站必须启用 SSL/TLS 证书，HTTP 页面将被 Chrome 标记为"不安全"，并失去排名信任度。</li>
+                <li class="flex items-start gap-2"><span class="text-brand-purple font-bold">🌍</span> <strong class="text-brand-dark">Hreflang 标签：</strong>多语言站点必须正确配置 hreflang 属性，避免搜索引擎在不同语言版本间产生索引混淆。</li>
+                <li class="flex items-start gap-2"><span class="text-brand-purple font-bold">📱</span> <strong class="text-brand-dark">移动端优先索引：</strong>Google 已完全切换为 Mobile-First Indexing。确保您的移动端版本包含与桌面端完全相同的内容和元数据。</li>
+                <li class="flex items-start gap-2"><span class="text-brand-purple font-bold">♿</span> <strong class="text-brand-dark">无障碍访问 (a11y)：</strong>为图片添加 alt 属性、确保足够的颜色对比度、使用语义化 HTML 标签。这些信号在 Google 的质量评估中权重日益提升。</li>
+            </ul>
+        </div>
+
+        <div class="bg-brand-dark text-white p-8 rounded-2xl mt-12 not-prose text-center">
+            <h4 class="text-xl font-black mb-4">寻找技术 SEO 审计服务？</h4>
+            <p class="text-white/50 mb-6 max-w-md mx-auto">我们的数据库收录了全球顶尖的技术 SEO 团队，按抓取预算优化、Core Web Vitals 评分和 JS 渲染能力排名。</p>
+            <a href="/agencies.html" class="inline-block bg-brand-green text-white px-8 py-3 rounded-lg font-bold hover:opacity-90 transition">查看技术 SEO 专家</a>
+        </div>
+
+        <div class="mt-16 flex gap-4">
+            <a href="/definitions/what-is-seo.html" class="text-brand-purple font-bold hover:underline">← 什么是 SEO?</a>
+            <span class="text-gray-300">|</span>
+            <a href="/articles/on-page-seo-guide.html" class="text-brand-purple font-bold hover:underline">On-Page SEO 指南 →</a>
+        </div>
+    </main>
+
+<footer class="bg-brand-dark pt-20 pb-10 border-t border-brand-gray/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="/" class="flex flex-col gap-2">
+                        <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-80 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+                    </a>
+                    <p class="text-sm text-brand-gray text-gray-400 mt-4 leading-relaxed">
+                        您的中立、客观的中文 SEO 与 AI Search 知识平台与评测数据库。
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">平台目录</h4>
+                    <ul class="space-y-3 shrink">
+                        <li><a href="/agencies.html" class="text-gray-400 hover:text-white transition text-sm">SEO 机构榜单</a></li>
+                        <li><a href="/rankings/global-geo-experts.html" class="text-gray-400 hover:text-white transition text-sm">GEO 专家榜</a></li>
+                        <li><a href="/ranking-methodology.html" class="text-gray-400 hover:text-white transition text-sm">排名评测机制</a></li>
+                        <li><a href="/submit-agency.html" class="text-brand-purple hover:text-white transition text-sm font-semibold">提交机构数据</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">知识中心</h4>
+                    <ul class="space-y-3 shrink">
+                        <li><a href="/definitions/what-is-seo.html" class="text-gray-400 hover:text-white transition text-sm">什么是 SEO?</a></li>
+                        <li><a href="/definitions/what-is-geo.html" class="text-gray-400 hover:text-white transition text-sm">什么是 GEO?</a></li>
+                        <li><a href="/ai-search/ai-search-guide.html" class="text-gray-400 hover:text-white transition text-sm">AI 搜索与发现</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">关于平台</h4>
+                    <ul class="space-y-3 shrink">
+                        <li><a href="/about-platform.html" class="text-gray-400 hover:text-white transition text-sm">关于我们</a></li>
+                        <li><a href="/articles.html" class="text-gray-400 hover:text-white transition text-sm">最新动态</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition text-sm">隐私保护</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Agency Semrush Data Platform. 保留所有权利.</p>
+                <div class="mt-4 sm:mt-0 flex space-x-6">
+                    <a href="#" class="hover:text-white transition">Twitter</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

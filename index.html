@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO & AI Search 权威知识库 | Agency Semrush</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="Agency Semrush">
+    <meta name="description" content="权威的 AI 搜索与 SEO 数据排名平台。行业领先的搜索引擎优化定义、排名数据、AI 搜索研究报告，以及经过严格审核的全球顶级 SEO 机构信托榜单。">
+    <link rel="canonical" href="https://agencysemrush.com/" />
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { orange: '#ff642d', green: '#00ce7d', purple: '#8a3ffc', dark: '#1c1c1c', gray: '#5e617d', light: '#f5f6f8' }
+                    },
+                    fontFamily: { sans: ['Montserrat', '"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .animate-marquee { animation: marquee 28s linear infinite; display: flex; width: max-content; }
+        .marquee-track { overflow: hidden; }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+        .bento-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+        .bento-card:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(0,0,0,0.10); }
+    </style>
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased">
+
+    <!-- ═══ NAVBAR ═══ -->
+                                    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-brand-dark/90 backdrop-blur-md">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10 flex items-center justify-between h-28">
+            <a href="/index.html" class="flex items-center">
+                <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-90 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+            </a>
+            <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/60">
+                <!-- SEO Fundamentals Dropdown -->
+                <div class="relative group h-full py-4">
+                    <button class="hover:text-white transition flex items-center gap-1">
+                        SEO 基础
+                        <svg class="w-4 h-4 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-12 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 w-48 text-center origin-top-left transition-all">
+                        <a href="/definitions/what-is-seo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 SEO</a>
+                        <a href="/definitions/what-is-aeo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 AEO</a>
+                        <a href="/definitions/what-is-geo.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">什么是 GEO</a>
+                    </div>
+                </div>
+
+                <a href="/ai-search/ai-search-guide.html" class="hover:text-white transition">AI Search</a>
+
+                <!-- Industry Dropdown -->
+                <div class="relative group h-full py-4">
+                    <button class="hover:text-white transition flex items-center gap-1">
+                        行业SEO
+                        <svg class="w-4 h-4 transition-transform group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute top-12 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl py-2 w-48 text-center origin-top-left transition-all">
+                        <a href="/industries/ecommerce.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">电商 E-Commerce</a>
+                        <a href="/industries/real-estate.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">房产 Property</a>
+                        <a href="/industries/finance.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">金融 Finance</a>
+                        <a href="/industries/beauty.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">医美 Beauty</a>
+                        <a href="/industries/fnb.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">餐饮 F&amp;B</a>
+                        <a href="/industries/b2b.html" class="px-4 py-2 hover:bg-white/5 hover:text-white transition">B2B 技术</a>
+                    </div>
+                </div>
+
+                <a href="/articles.html" class="hover:text-white transition">知识库</a>
+                <a href="/agencies.html" class="hover:text-white transition">机构排名</a>
+            </div>
+            <a href="/agencies.html" class="hidden lg:block text-sm font-bold bg-brand-green text-white px-5 py-2 rounded-lg hover:opacity-90 transition">探索排行榜</a>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO — Full-screen dark editorial ═══ -->
+    <section class="min-h-screen pt-16 flex flex-col bg-brand-dark relative overflow-hidden">
+        <!-- Video Background -->
+        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0" style="pointer-events:none;">
+            <source src="/视频生成请求.mp4" type="video/mp4">
+        </video>
+        <!-- Cinematic gradient overlay -->
+        <div class="absolute inset-0 z-[1]" style="background: linear-gradient(to top, rgba(28,28,28,0.85) 0%, rgba(28,28,28,0.35) 45%, rgba(28,28,28,0.15) 100%);"></div>
+        <!-- Edge vignette -->
+        <div class="absolute inset-0 z-[1]" style="background: radial-gradient(ellipse at center, transparent 50%, rgba(28,28,28,0.6) 100%);"></div>
+        <!-- Decorative background grid -->
+        <div class="absolute inset-0 opacity-5 z-[2]" style="background-image: linear-gradient(rgba(138,63,252,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(138,63,252,0.5) 1px, transparent 1px); background-size: 60px 60px;"></div>
+        <!-- Glow orb -->
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-brand-purple/10 blur-3xl pointer-events-none z-[2]"></div>
+
+        <div class="relative z-10 max-w-screen-xl mx-auto px-6 lg:px-10 pt-20 pb-8 flex-1 flex flex-col justify-center">
+
+            <!-- H1 — giant editorial type -->
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-none tracking-tighter mb-6 max-w-5xl" style="text-shadow: 0 2px 20px rgba(0,0,0,0.8), 0 1px 4px rgba(0,0,0,0.9);">
+                <span class="block text-white">权威 SEO &</span>
+                <span class="block text-brand-purple">AI 搜索</span>
+                <span class="block text-white/70">排名数据库</span>
+            </h1>
+
+            <p class="text-white/80 text-lg max-w-2xl mb-16 leading-relaxed font-medium" style="text-shadow: 0 1px 8px rgba(0,0,0,0.9);">
+                行业领先的 SEO 与 AI 搜索知识平台 — 提供排名数据、研究报告与经过严格审核的全球 SEO 机构信托榜单。
+            </p>
+
+            <!-- CTA Row -->
+            <div class="flex flex-wrap gap-4 mb-20">
+                <a href="/agencies.html" class="bg-brand-green text-white font-black px-8 py-4 rounded-xl text-base hover:shadow-[0_0_30px_rgba(0,206,125,0.4)] hover:opacity-100 transition-all hover:-translate-y-0.5">查看全球排行榜 →</a>
+                <a href="/definitions/what-is-seo.html" class="bg-black/40 backdrop-blur-md border border-white/20 text-white font-bold px-8 py-4 rounded-xl text-base hover:bg-white/10 transition-all">查阅术语百科</a>
+            </div>
+
+            <!-- BENTO STATS GRID -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10">
+                <div class="bento-card bg-brand-dark/70 backdrop-blur-xl shadow-2xl border border-white/10 rounded-2xl p-6 hover:-translate-y-1 transition-all">
+                    <p class="text-4xl font-black text-white mb-1">1,240<span class="text-brand-green">+</span></p>
+                    <p class="text-sm text-white/80 font-bold drop-shadow-md">已收录机构</p>
+                </div>
+                <div class="bento-card bg-brand-dark/70 backdrop-blur-xl shadow-2xl border border-white/10 rounded-2xl p-6 hover:-translate-y-1 transition-all">
+                    <p class="text-4xl font-black text-white mb-1">45<span class="text-brand-purple">+</span></p>
+                    <p class="text-sm text-white/80 font-bold drop-shadow-md">深度行业报告</p>
+                </div>
+                <div class="bento-card bg-brand-dark/70 backdrop-blur-xl shadow-2xl border border-white/10 rounded-2xl p-6 hover:-translate-y-1 transition-all">
+                    <p class="text-4xl font-black text-brand-green mb-1" style="text-shadow: 0 0 20px rgba(0,206,125,0.3);">9.9</p>
+                    <p class="text-sm text-white/80 font-bold drop-shadow-md">最高 Authority Score</p>
+                </div>
+                <div class="bento-card bg-brand-purple/20 backdrop-blur-xl shadow-[0_0_40px_rgba(138,63,252,0.15)] border border-brand-purple/40 rounded-2xl p-6 hover:-translate-y-1 transition-all">
+                    <p class="text-4xl font-black text-brand-purple mb-1" style="text-shadow: 0 0 20px rgba(138,63,252,0.4);">14</p>
+                    <p class="text-sm text-white/80 font-bold drop-shadow-md">AI 平台引用追踪</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ═══ BENTO RANKINGS GRID ═══ -->
+    <section class="bg-brand-light py-20">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10">
+            <div class="flex items-end justify-between mb-10 fade-up">
+                <div>
+                    <p class="text-xs font-black text-brand-purple uppercase tracking-widest mb-2">核心榜单</p>
+                    <h2 class="text-3xl font-black text-brand-dark">核心排行榜单</h2>
+                </div>
+                <a href="/agencies.html" class="text-sm font-bold text-brand-gray hover:text-brand-purple transition hidden sm:block">浏览完整数据库 →</a>
+            </div>
+
+            <!-- Asymmetric bento grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 fade-up">
+                <!-- Large feature card -->
+                <a href="/agencies.html" class="bento-card md:col-span-2 bg-brand-dark rounded-2xl p-10 flex flex-col justify-between min-h-[240px] group">
+
+                    <div>
+                        <h3 class="text-2xl font-black text-white mb-2 group-hover:text-brand-green transition">全球 SEO 机构榜</h3>
+                        <p class="text-white/40 text-sm">分析与排名顶尖跨国企业级搜索引擎优化服务商。通过 Authority Score 客观排序。</p>
+                    </div>
+                    <span class="mt-6 text-brand-green text-sm font-bold">查看榜单 →</span>
+                </a>
+
+                <!-- Tall side card -->
+                <a href="/rankings/global-geo-experts.html" class="bento-card bg-brand-purple rounded-2xl p-8 flex flex-col justify-between min-h-[240px] group">
+
+                    <div>
+                        <h3 class="text-xl font-black text-white mb-2">AI 搜索与 GEO 榜</h3>
+                        <p class="text-white/60 text-sm">ChatGPT, Gemini 及 Google AI Overviews 优化先驱。</p>
+                    </div>
+                    <span class="mt-6 text-white/80 text-sm font-bold">查看榜单 →</span>
+                </a>
+
+                <!-- Two bottom cards -->
+                <a href="/rankings/malaysia-seo-experts.html" class="bento-card bg-white border border-gray-100 rounded-2xl p-8 flex flex-col justify-between min-h-[180px] group shadow-sm">
+
+                    <div>
+                        <h3 class="text-lg font-black text-brand-dark mb-1 group-hover:text-brand-purple transition">马来西亚地区榜</h3>
+                        <p class="text-brand-gray text-xs">本地最佳 SEO 专家与技术顾问排名。</p>
+                    </div>
+                </a>
+
+                <a href="/industries/ecommerce.html" class="bento-card bg-white border border-gray-100 rounded-2xl p-8 flex flex-col justify-between min-h-[180px] group shadow-sm">
+
+                    <div>
+                        <h3 class="text-lg font-black text-brand-dark mb-1 group-hover:text-brand-purple transition">电商行业 SEO 榜</h3>
+                        <p class="text-brand-gray text-xs">Shopify, WooCommerce 及大型 B2C 商城垂直排名。</p>
+                    </div>
+                </a>
+
+                <a href="/agencies.html" class="bento-card bg-brand-green rounded-2xl p-8 flex flex-col justify-between min-h-[180px] group">
+                    <div class="text-xl font-black text-white/60 mb-2">数据库</div>
+                    <div>
+                        <p class="text-4xl font-black text-white">1,240+</p>
+                        <p class="text-white/70 text-sm mt-1">已收录机构，立即探索</p>
+                    </div>
+                    <span class="mt-4 text-white font-black text-sm">探索全部 →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SERVICES — Horizontal alternating strips ═══ -->
+    <section class="bg-white py-20 border-y border-gray-100">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10">
+            <div class="mb-12 fade-up">
+                <p class="text-xs font-black text-brand-purple uppercase tracking-widest mb-2">核心服务</p>
+                <h2 class="text-3xl font-black text-brand-dark">覆盖搜索全场景优化</h2>
+            </div>
+
+            <!-- Strip 1 -->
+            <div class="flex flex-col md:flex-row items-stretch gap-0 border border-gray-100 rounded-2xl overflow-hidden mb-4 fade-up">
+                <div class="md:w-16 bg-brand-dark flex items-center justify-center py-6 md:py-0">
+                    <span class="text-white/30 font-black text-2xl md:[writing-mode:vertical-lr] md:rotate-180">01</span>
+                </div>
+                <div class="flex-1 p-8">
+                    <div class="flex items-start justify-between flex-wrap gap-4">
+                        <div class="flex-1">
+                            <span class="inline-block bg-brand-purple/10 text-brand-purple text-xs font-black px-3 py-1 rounded-full mb-3">技术 &amp; 企业级</span>
+                            <h3 class="text-xl font-black text-brand-dark mb-2">技术与企业级 SEO</h3>
+                            <p class="text-brand-gray text-sm leading-relaxed max-w-xl">系统化技术审计、内容架构优化与权威建设——构建可持续的自然搜索增长引擎。Core Web Vitals、Schema 结构化数据、爬虫预算优化。</p>
+                        </div>
+                        <a href="/definitions/what-is-seo.html" class="self-end text-sm font-bold text-brand-purple hover:text-brand-dark transition whitespace-nowrap">了解更多 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strip 2 -->
+            <div class="flex flex-col md:flex-row items-stretch gap-0 border border-gray-100 rounded-2xl overflow-hidden mb-4 fade-up">
+                <div class="md:w-16 bg-brand-purple flex items-center justify-center py-6 md:py-0">
+                    <span class="text-white/50 font-black text-2xl md:[writing-mode:vertical-lr] md:rotate-180">02</span>
+                </div>
+                <div class="flex-1 p-8">
+                    <div class="flex items-start justify-between flex-wrap gap-4">
+                        <div class="flex-1">
+                            <span class="inline-block bg-brand-purple/10 text-brand-purple text-xs font-black px-3 py-1 rounded-full mb-3">生成式搜索</span>
+                            <h3 class="text-xl font-black text-brand-dark mb-2">GEO — 生成式搜索引擎优化</h3>
+                            <p class="text-brand-gray text-sm leading-relaxed max-w-xl">让品牌在 ChatGPT、Gemini 和 Google AI Overviews 的生成式回答中占据引用位置。实体映射、知识图谱整合、语义权威建设。</p>
+                        </div>
+                        <a href="/definitions/what-is-geo.html" class="self-end text-sm font-bold text-brand-purple hover:text-brand-dark transition whitespace-nowrap">了解更多 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strip 3 -->
+            <div class="flex flex-col md:flex-row items-stretch gap-0 border border-gray-100 rounded-2xl overflow-hidden mb-4 fade-up">
+                <div class="md:w-16 bg-brand-green flex items-center justify-center py-6 md:py-0">
+                    <span class="text-white/50 font-black text-2xl md:[writing-mode:vertical-lr] md:rotate-180">03</span>
+                </div>
+                <div class="flex-1 p-8">
+                    <div class="flex items-start justify-between flex-wrap gap-4">
+                        <div class="flex-1">
+                            <span class="inline-block bg-brand-green/10 text-brand-green text-xs font-black px-3 py-1 rounded-full mb-3">答案引擎</span>
+                            <h3 class="text-xl font-black text-brand-dark mb-2">AEO — 答案引擎优化矩阵</h3>
+                            <p class="text-brand-gray text-sm leading-relaxed max-w-xl">通过问答内容矩阵与结构化数据，确保品牌成为 Perplexity、Claude 等 AI 问答平台的权威引用来源。</p>
+                        </div>
+                        <a href="/definitions/what-is-aeo.html" class="self-end text-sm font-bold text-brand-green hover:text-brand-dark transition whitespace-nowrap">了解更多 →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strip 4 -->
+            <div class="flex flex-col md:flex-row items-stretch gap-0 border border-gray-100 rounded-2xl overflow-hidden fade-up">
+                <div class="md:w-16 bg-brand-orange flex items-center justify-center py-6 md:py-0">
+                    <span class="text-white/50 font-black text-2xl md:[writing-mode:vertical-lr] md:rotate-180">04</span>
+                </div>
+                <div class="flex-1 p-8">
+                    <div class="flex items-start justify-between flex-wrap gap-4">
+                        <div class="flex-1">
+                            <span class="inline-block bg-brand-orange/10 text-brand-orange text-xs font-black px-3 py-1 rounded-full mb-3">马来西亚 &amp; 亚洲</span>
+                            <h3 class="text-xl font-black text-brand-dark mb-2">本地 SEO — Google Maps 主导策略</h3>
+                            <p class="text-brand-gray text-sm leading-relaxed max-w-xl">GBP 优化、本地引用建设与评论管理——为东南亚本地实体业务设计的 Maps 排名加速系统。</p>
+                        </div>
+                        <a href="/definitions/what-is-local-seo.html" class="self-end text-sm font-bold text-brand-orange hover:text-brand-dark transition whitespace-nowrap">了解更多 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FRAMEWORK — 3-step dark strip ═══ -->
+    <section class="bg-brand-dark py-20">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10">
+            <div class="mb-12 fade-up">
+                <p class="text-xs font-black text-brand-green uppercase tracking-widest mb-2">方法论框架</p>
+                <h2 class="text-3xl font-black text-white">我们的核心方法论框架</h2>
+            </div>
+
+            <!-- 3 horizontal steps -->
+            <div class="grid md:grid-cols-3 gap-px bg-white/10 rounded-2xl overflow-hidden fade-up">
+                <div class="bg-brand-dark flex flex-col h-full group">
+                    <div class="p-10 flex-1">
+                        <span class="text-brand-green font-black text-xs uppercase tracking-widest block mb-6">步骤 01</span>
+                        <h3 class="text-xl font-black text-white mb-4">人工 + 机器 SEO</h3>
+                        <p class="text-white/40 text-sm leading-relaxed">构建无懈可击的技术基础：AI 辅助审计识别技术缺口，结合顶尖 SEO 专家架构规划，实现 Core Web Vitals 达标与精准实体信号部署。</p>
+                        <div class="mt-8 flex flex-wrap gap-2">
+                            <span class="border border-white/10 text-white/40 text-xs px-2 py-1 rounded">Core Web Vitals</span>
+                            <span class="border border-white/10 text-white/40 text-xs px-2 py-1 rounded">Schema</span>
+                            <span class="border border-white/10 text-white/40 text-xs px-2 py-1 rounded">Mobile SEO</span>
+                        </div>
+                    </div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=80" alt="Tech SEO Infrastructure" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="bg-brand-dark border-l border-white/10 flex flex-col h-full group">
+                    <div class="p-10 flex-1">
+                        <span class="text-brand-purple font-black text-xs uppercase tracking-widest block mb-6">步骤 02</span>
+                        <h3 class="text-xl font-black text-white mb-4">主导 SERP 的技术</h3>
+                        <p class="text-white/40 text-sm leading-relaxed">以主题聚类和语义覆盖率为核心，融合 AEO 问答矩阵与 GEO 权威信号，构建跨平台语义权威护城河。</p>
+                        <div class="mt-8 flex flex-wrap gap-2">
+                            <span class="border border-white/10 text-white/40 text-xs px-2 py-1 rounded">主题聚类</span>
+                            <span class="border border-white/10 text-white/40 text-xs px-2 py-1 rounded">AEO 策略</span>
+                            <span class="border border-white/10 text-white/40 text-xs px-2 py-1 rounded">GEO 策略</span>
+                        </div>
+                    </div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1200&q=80" alt="Dominating SERP with AI" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="bg-brand-dark border-l border-white/10 flex flex-col h-full group">
+                    <div class="p-10 flex-1">
+                        <span class="text-brand-orange font-black text-xs uppercase tracking-widest block mb-6">步骤 03</span>
+                        <h3 class="text-xl font-black text-white mb-4">生态系统扩展</h3>
+                        <p class="text-white/40 text-sm leading-relaxed">卫星站资产建设、高权重外链工程和数字 PR 媒体触达，持续监测排名波动与 AI 引用频率。</p>
+                        <div class="mt-8 flex flex-wrap gap-2">
+                            <span class="border border-white/10 text-white/40 text-xs px-2 py-1 rounded">外链建设</span>
+                            <span class="border border-white/10 text-white/40 text-xs px-2 py-1 rounded">Digital PR</span>
+                            <span class="border border-white/10 text-white/40 text-xs px-2 py-1 rounded">卫星资产</span>
+                        </div>
+                    </div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=1200&q=80" alt="Ecosystem Expansion" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ARTICLES HUB — Magazine layout ═══ -->
+    <section class="bg-brand-light py-20">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10">
+            <div class="flex items-end justify-between mb-10 fade-up">
+                <div>
+                    <p class="text-xs font-black text-brand-purple uppercase tracking-widest mb-2">搜商智库</p>
+                    <h2 class="text-3xl font-black text-brand-dark">最新行业报告与分析指南</h2>
+                </div>
+                <a href="/articles.html" class="text-sm font-bold text-brand-gray hover:text-brand-purple transition hidden sm:block">查阅所有文章 →</a>
+            </div>
+
+            <!-- Magazine: 1 large left + 3 small right -->
+            <div class="grid md:grid-cols-3 gap-4 fade-up">
+                <a href="/articles/technical-seo-guide.html" class="bento-card md:col-span-2 md:row-span-2 bg-brand-dark rounded-2xl p-10 flex flex-col justify-end min-h-[340px] group relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&q=80" alt="Featured Article Cover" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition duration-700" loading="lazy" decoding="async">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-purple/20 to-transparent mix-blend-overlay"></div>
+                    <div class="relative z-10">
+                        <span class="inline-block bg-brand-purple/30 text-brand-purple text-xs font-black px-3 py-1 rounded-full mb-4">技术 SEO</span>
+                        <h3 class="text-2xl font-black text-white mb-2 group-hover:text-brand-green transition">2026 年全面技术 SEO 审查指南</h3>
+                        <p class="text-white/40 text-sm mb-6">从抓取预算优化到 Core Web Vitals 深入解析，系统构建技术健康度护城河。</p>
+                        <span class="text-brand-green font-bold text-sm">阅读原文 →</span>
+                    </div>
+                </a>
+
+                <a href="/articles/keyword-research-guide.html" class="bento-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm group flex flex-col justify-between">
+                    <span class="inline-block bg-brand-green/10 text-brand-green text-xs font-black px-3 py-1 rounded-full mb-3 self-start">SEO 基础</span>
+                    <div>
+                        <h3 class="text-base font-black text-brand-dark mb-1 group-hover:text-brand-purple transition">关键词研究完整指南</h3>
+                        <p class="text-brand-gray text-xs">搜索意图分析、长尾词策略与关键词优先级排列。</p>
+                    </div>
+                    <span class="mt-4 text-brand-purple font-bold text-xs">阅读原文 →</span>
+                </a>
+
+                <a href="/ai-search/ai-search-guide.html" class="bento-card bg-brand-purple/10 border border-brand-purple/20 rounded-2xl p-6 group flex flex-col justify-between">
+                    <span class="inline-block bg-brand-purple/20 text-brand-purple text-xs font-black px-3 py-1 rounded-full mb-3 self-start">AI 搜索</span>
+                    <div>
+                        <h3 class="text-base font-black text-brand-dark mb-1 group-hover:text-brand-purple transition">如何在 ChatGPT 搜索中获取引文</h3>
+                        <p class="text-brand-gray text-xs">GEO 核心逻辑与算法反向工程报告。</p>
+                    </div>
+                    <span class="mt-4 text-brand-purple font-bold text-xs">阅读原文 →</span>
+                </a>
+
+                <a href="/rankings/malaysia-seo-experts.html" class="bento-card md:col-span-none bg-brand-green/10 border border-brand-green/20 rounded-2xl p-6 group flex flex-col justify-between">
+                    <span class="inline-block bg-brand-green/20 text-brand-green text-xs font-black px-3 py-1 rounded-full mb-3 self-start">本地优化</span>
+                    <div>
+                        <h3 class="text-base font-black text-brand-dark mb-1 group-hover:text-brand-green transition">大马本地 SEO 实战架构</h3>
+                        <p class="text-brand-gray text-xs">统治 Google Maps 的决定性要素。</p>
+                    </div>
+                    <span class="mt-4 text-brand-green font-bold text-xs">阅读原文 →</span>
+                </a>
+            </div>
+
+            <div class="mt-8 text-center fade-up">
+                <a href="/articles.html" class="inline-block bg-brand-dark text-white px-8 py-3 rounded-lg font-bold hover:bg-black transition shadow-md">查阅所有知识文章</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS — Side-by-side with border ═══ -->
+    <section class="bg-white border-y border-gray-100 py-20">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10">
+            <div class="mb-10 fade-up">
+                <p class="text-xs font-black text-brand-purple uppercase tracking-widest mb-2">用户评价</p>
+                <h2 class="text-3xl font-black text-brand-dark">用户反馈</h2>
+            </div>
+            <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-100 fade-up">
+                <div class="py-8 md:py-0 md:pr-12">
+                    <div class="text-brand-green text-xl mb-4">★★★★★</div>
+                    <p class="text-brand-dark text-base font-medium leading-relaxed mb-8">"Agency Semrush 的数据评测体系远比其他平台客观。我们通过这里的 Authority Score 筛选出了最终合作的 SEO 机构，是市面上少有的真正中立、数据驱动的中文 SEO 资源。"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-purple rounded-full flex items-center justify-center text-white font-black text-sm">LW</div>
+                        <div>
+                            <p class="font-bold text-brand-dark text-sm">李伟 (Li Wei)</p>
+                            <p class="text-brand-gray text-xs">电商增长总监</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-8 md:py-0 md:pl-12">
+                    <div class="text-brand-green text-xl mb-4">★★★★★</div>
+                    <p class="text-brand-dark text-base font-medium leading-relaxed mb-8">"作为一家 SEO 机构，我们在收录后的前三个月就收到了来自平台的高质量询盘。Agency Semrush 的用户群体非常精准，是真正在寻找专业服务的决策者。"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-green rounded-full flex items-center justify-center text-white font-black text-sm">ZM</div>
+                        <div>
+                            <p class="font-bold text-brand-dark text-sm">张明 (Zhang Ming)</p>
+                            <p class="text-brand-gray text-xs">创始人，某新加坡 SEO 机构</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CTA — Dark full-width ═══ -->
+    <section id="contact" class="bg-brand-dark py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(rgba(0,206,125,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(0,206,125,0.5) 1px, transparent 1px); background-size: 60px 60px;"></div>
+        <div class="relative max-w-screen-xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-10 fade-up">
+            <div>
+                <h2 class="text-3xl lg:text-5xl font-black text-white leading-tight mb-4">准备好找到<br/><span class="text-brand-green">最适合的合作伙伴</span>了吗？</h2>
+                <p class="text-white/40 max-w-xl">浏览 1,240+ 家经过严格审核的 SEO 机构，通过 Authority Score 数据做出最有把握的决策。</p>
+            </div>
+            <div class="flex flex-col gap-3 flex-shrink-0">
+                <a href="/agencies.html" class="bg-brand-green text-white font-black px-10 py-4 rounded-xl text-base hover:opacity-90 transition-all text-center">探索全球 SEO 排行榜</a>
+                <a href="/articles.html" class="border border-white/20 text-white font-bold px-10 py-4 rounded-xl text-base hover:bg-white/10 transition-all text-center">阅读指南</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="bg-brand-dark border-t border-white/10 pt-16 pb-8">
+        <div class="max-w-screen-xl mx-auto px-6 lg:px-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="/" class="flex flex-col gap-2">
+                        <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-80 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+                    </a>
+                    <p class="text-sm text-white/30 mt-4 leading-relaxed">您的中立、客观的中文 SEO 与 AI Search 知识平台与评测数据库。</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-black mb-4 text-xs uppercase tracking-widest">平台目录</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/agencies.html" class="text-white/40 hover:text-white transition text-sm">SEO 机构榜单</a></li>
+                        <li><a href="/rankings/global-geo-experts.html" class="text-white/40 hover:text-white transition text-sm">GEO 专家榜</a></li>
+                        <li><a href="/ranking-methodology.html" class="text-white/40 hover:text-white transition text-sm">排名评测机制</a></li>
+                        <li><a href="/submit-agency.html" class="text-brand-purple hover:text-white transition text-sm font-semibold">提交机构数据</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black mb-4 text-xs uppercase tracking-widest">知识中心</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/definitions/what-is-seo.html" class="text-white/40 hover:text-white transition text-sm">什么是 SEO?</a></li>
+                        <li><a href="/definitions/what-is-geo.html" class="text-white/40 hover:text-white transition text-sm">什么是 GEO?</a></li>
+                        <li><a href="/ai-search/ai-search-guide.html" class="text-white/40 hover:text-white transition text-sm">AI 搜索与发现</a></li>
+                        <li><a href="/articles.html" class="text-white/40 hover:text-white transition text-sm">SEO 文章</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black mb-4 text-xs uppercase tracking-widest">关于平台</h4>
+                    <ul class="space-y-3">
+                        <li><a href="/about-platform.html" class="text-white/40 hover:text-white transition text-sm">关于我们</a></li>
+                        <li><a href="/articles.html" class="text-white/40 hover:text-white transition text-sm">最新动态</a></li>
+                        <li><a href="mailto:hello@agencysemrush.com" class="text-white/40 hover:text-white transition text-sm">hello@agencysemrush.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-white/20">
+                <p>© <span id="year"></span> Agency Semrush Data Platform. 保留所有权利.</p>
+                <div class="mt-4 sm:mt-0 flex gap-6">
+                    <a href="#" class="hover:text-white transition">Twitter</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const navToggle = document.getElementById('nav-toggle');
+        if (navToggle) {
+            navToggle.addEventListener('click', function() {
+                const panel = document.getElementById('nav-mobile-panel');
+                const open = document.getElementById('nav-icon-open');
+                const close = document.getElementById('nav-icon-close');
+                if (!panel) return;
+                const isHidden = panel.classList.contains('hidden');
+                panel.classList.toggle('hidden');
+                if (open) open.classList.toggle('hidden', !isHidden);
+                if (close) close.classList.toggle('hidden', isHidden);
+                this.setAttribute('aria-expanded', String(isHidden));
+            });
+        }
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+    </script>
+</body>
+</html>

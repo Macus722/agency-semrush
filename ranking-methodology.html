@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平台评测算法与排名机制 (Authority Score) | Agency Semrush</title>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="Agency Semrush">
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { orange: '#ff642d', green: '#00ce7d', dark: '#1c1c1c', gray: '#5e617d', light: '#f5f6f8' } },
+                    fontFamily: { sans: ['Montserrat', '"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-light text-brand-dark font-sans leading-relaxed">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="/index.html" class="text-2xl font-extrabold text-brand-dark tracking-tighter">Agency <span class="text-brand-purple">Semrush</span></a>
+                </div>
+                <!-- Main Nav Links -->
+                <div class="hidden lg:block">
+                    <div class="ml-10 flex items-center space-x-8 font-semibold text-sm">
+                        <a href="/definitions/what-is-seo.html" class="text-brand-gray hover:text-brand-purple transition duration-200">SEO 基础</a>
+                        <a href="/ai-search/ai-search-guide.html" class="text-brand-gray hover:text-brand-purple transition duration-200">AI Search</a>
+                        <a href="/industries/ecommerce.html" class="text-brand-gray hover:text-brand-purple transition duration-200">行业SEO</a>
+                        <a href="/rankings/global-seo-agencies.html" class="text-brand-gray hover:text-brand-purple transition duration-200">国家SEO</a>
+                        <a href="/articles/technical-seo-guide.html" class="text-brand-gray hover:text-brand-purple transition duration-200">SEO工具</a>
+                        <a href="/agencies.html" class="text-brand-dark font-bold hover:text-brand-purple transition duration-200">SEO公司排名</a>
+                    </div>
+                </div>
+                <!-- CTA -->
+                <div class="hidden lg:block flex-shrink-0">
+                    <a href="/agencies.html" class="bg-brand-green text-white px-6 py-2.5 rounded-lg font-bold shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">探索排行榜</a>
+                </div>
+                <!-- Mobile button -->
+                <div class="lg:hidden flex items-center">
+                    <button class="text-brand-gray hover:text-brand-dark focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-brand-dark py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto block">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6">我们如何计算 <span class="text-brand-purple">Authority Score</span>？</h1>
+            <p class="text-xl text-gray-300 font-medium">深入了解我们的独立搜索引擎优化机构排名算法和数据收集方法论。</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-10">
+            <h2 class="text-2xl font-bold text-brand-dark mb-6">完全中立的数据源承诺</h2>
+            <p class="text-brand-gray mb-8">我们的排行榜**不接受任何形式的赞助排名或付费排名**（即没有由资金驱动的“Featured”标记）。所有的排名完全基于客观抓取、行业参考指标和过往已执行案例的表现。</p>
+            
+            <h3 class="text-xl font-bold text-brand-dark mb-4 border-b border-gray-100 pb-2">四大核心评价指标</h3>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-brand-light p-6 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-brand-dark text-lg mb-2">1. 市场占有率与域名权重 (30%)</h4>
+                    <p class="text-sm text-brand-gray">评估机构自身官方网站的流量、自然关键词排名情况和外链配置文件质量。</p>
+                </div>
+                <div class="bg-brand-light p-6 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-brand-dark text-lg mb-2">2. 可验证的执行案例 (30%)</h4>
+                    <p class="text-sm text-brand-gray">我们分析其公开客户案例的长尾关键词留存率，并进行 SERP (搜索引擎结果页面) 逆向工程验证。</p>
+                </div>
+                <div class="bg-brand-light p-6 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-brand-dark text-lg mb-2">3. 服务专注度与颗粒度 (20%)</h4>
+                    <p class="text-sm text-brand-gray">奖励具备特殊领域或深度技术专利的机构（例如 GEO 生成式优化或企业级多语言抓取策略）。</p>
+                </div>
+                <div class="bg-brand-light p-6 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-brand-dark text-lg mb-2">4. 市场评价与独立评测 (20%)</h4>
+                    <p class="text-sm text-brand-gray">来自第三方审核平台 (Clutch, G2) 及实名认证 CMO 的反馈评估的综合评分。</p>
+                </div>
+            </div>
+
+            <div class="bg-brand-green/10 border-l-4 border-brand-purple p-6 text-brand-dark mt-8 rounded-r-lg">
+                <strong>提交复核请求：</strong> 如果您认为机构当前得分并未准确反映真实的技术实力或有未抓取的重大案例，请通过<a href="/submit-agency.html" class="text-brand-purple underline ml-1">数据提交通道</a>申诉，算法通常每月中旬批量更新。
+            </div>
+        </div>
+    </main>
+
+<footer class="bg-brand-dark pt-20 pb-10 border-t border-brand-gray/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="/" class="flex flex-col gap-2">
+                        <img src="/assets/images/website-logo.png" alt="Agency Semrush" class="h-24 w-auto object-contain opacity-80 hover:opacity-100 transition" fetchpriority="high" decoding="async">
+                    </a>
+                    <p class="text-sm text-brand-gray text-gray-400 mt-4 leading-relaxed">
+                        您的中立、客观的中文 SEO 与 AI Search 知识平台与评测数据库。
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">平台目录</h4>
+                    <ul class="space-y-3 shrink">
+                        <li><a href="/agencies.html" class="text-gray-400 hover:text-white transition text-sm">SEO 机构榜单</a></li>
+                        <li><a href="/rankings/global-geo-experts.html" class="text-gray-400 hover:text-white transition text-sm">GEO 专家榜</a></li>
+                        <li><a href="/ranking-methodology.html" class="text-gray-400 hover:text-white transition text-sm">排名评测机制</a></li>
+                        <li><a href="/submit-agency.html" class="text-brand-purple hover:text-white transition text-sm font-semibold">提交机构数据</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">知识中心</h4>
+                    <ul class="space-y-3 shrink">
+                        <li><a href="/definitions/what-is-seo.html" class="text-gray-400 hover:text-white transition text-sm">什么是 SEO?</a></li>
+                        <li><a href="/definitions/what-is-geo.html" class="text-gray-400 hover:text-white transition text-sm">什么是 GEO?</a></li>
+                        <li><a href="/ai-search/ai-search-guide.html" class="text-gray-400 hover:text-white transition text-sm">AI 搜索与发现</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">关于平台</h4>
+                    <ul class="space-y-3 shrink">
+                        <li><a href="/about-platform.html" class="text-gray-400 hover:text-white transition text-sm">关于我们</a></li>
+                        <li><a href="/articles.html" class="text-gray-400 hover:text-white transition text-sm">最新动态</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition text-sm">隐私保护</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 中国Agency Semrush Data Platform. 保留所有权利.</p>
+                <div class="mt-4 sm:mt-0 flex space-x-6">
+                    <a href="#" class="hover:text-white transition">Twitter</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

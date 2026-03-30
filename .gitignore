@@ -1,0 +1,12 @@
+# Development scripts (already cleaned up)
+node_modules/
+package-lock.json
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
