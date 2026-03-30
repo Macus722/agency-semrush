@@ -12,7 +12,7 @@ const agencyData = [
     rating: 9.9,
     reviewCount: 84,
     location: "全球 / 马来西亚 / 欧洲",
-    headcount: "100-499 人",
+    headcount: "30-50 人",
     founded: 2015,
     socials: {
       linkedin: "https://linkedin.com/company/brandthirty",
